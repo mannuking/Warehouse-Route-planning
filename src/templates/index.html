@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehouse Route Planning</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            overflow: hidden;
+        }
+        h1 {
+            text-align: center;
+            color: #444;
+            margin-bottom: 0;
+        }
+        .warehouse-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        .cell {
+            position: absolute;
+            width: 5%; /* Adjust cell size based on warehouse size */
+            height: 5%;
+            border: 2px solid #ddd;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .path {
+            background-color: #90ee90; /* Light green color for path */
+        }
+        .obstacle {
+            background-color: #ff6347; /* Tomato color for obstacles */
+        }
+        .arrow {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-image: url('arrow-down.svg'); /* Placeholder for arrow SVG */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .pick-location {
+            background-color: #add8e6; /* Light blue color for pick locations */
+        }
+        .drop-location {
+            background-color: #ffd700; /* Gold color for drop locations */
+        }
+    </style>
+</head>
+<body>
+    <h1>Warehouse Route Planning</h1>
+    <div class="warehouse-container">
+        <!-- Dynamically generate cells here -->
+        <!-- Example of a path cell with an arrow -->
+        <div class="cell path" style="top: 10%; left: 20%;">
+            <span class="arrow"></span>
+        </div>
+        <!-- Example of an obstacle cell -->
+        <div class="cell obstacle" style="top: 30%; left: 40%;"></div>
+        <!-- Example of a pick location cell -->
+        <div class="cell pick-location" style="top: 50%; left: 60%;"></div>
+        <!-- Example of a drop location cell -->
+        <div class="cell drop-location" style="top: 70%; left: 80%;"></div>
+    </div>
+</body>
+</html>
