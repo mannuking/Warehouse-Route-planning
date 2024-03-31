@@ -22,12 +22,14 @@ We'll use pip to install the required library: Flask.
 
 In your terminal, run the following command:
 
+pip install Flask
 
 ### 4. Run the Application
 
 1. In the terminal, navigate back to the "J&J_Project" folder (if you've exited).
 2. Run the following command to start the Flask app:
 
+python app.py
 
 ### 5. Access the Warehouse Interface
 
